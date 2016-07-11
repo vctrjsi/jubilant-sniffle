@@ -12,7 +12,7 @@ for year in range (0, LengthOfPayments):
     print(" "+str(year)+ "      "+str(start)+"       "+str(PaidIn)+"       "+str(interest)+"      "+str(final))
 
     year+=1
-    start+=final
+    start+=(PaidIn +interest)
     interest = (PaidIn+start)*0.1
-    final = PaidIn + interest
+    final = PaidIn + interest + start
 
